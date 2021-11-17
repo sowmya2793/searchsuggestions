@@ -10,8 +10,8 @@ fetch(url, {
         method:'GET',
         mode: 'cors',
         headers: {
-                Authorization :  'Basic ' + btoa('username: password'),
-                Content-Type : 'application/json'
+                'Authorization' :  'Basic ' + btoa('username: password'),
+                'Content-Type' : 'application/json'
         },
         //credentials: 'omit'
        })
