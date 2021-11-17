@@ -6,7 +6,7 @@ const username = 'api@innosabi.com';
 //headers.set('Authorization', 'Basic ' + btoa(username + ":" + password));
 //headers.append('Content-Type', 'application/json');
 //headers.append('Accept', 'application/json');
-/*fetch(url, {
+fetch(url, {
         method:'GET',
         mode: 'no-cors',
         headers: {
@@ -20,9 +20,9 @@ const username = 'api@innosabi.com';
     })
 .catch(error => {
   console.log('Error:', error);
-}); */
+});
 //Test code start
-async function APIcallfinal(){
+/*async function APIcallfinal(){
 try {
         let response= await fetch(url,{
                 method : 'get',
@@ -49,4 +49,4 @@ async function main(){
         console.log('second')
 }
 
-main();
+main(); */
