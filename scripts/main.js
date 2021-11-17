@@ -37,14 +37,11 @@ function doCORSRequest(options, printResult) {
 */
 //init TBD instead of code above
 let url = 'https://spark.innosabi.com/api/v4/suggestion';
-headers.set('Authorization', 'Basic ' + btoa(username + ":" + password));
-headers.append('Content-Type', 'application/json');
-headers.append('Accept', 'application/json');
+
 fetch(url, {
         method:'GET',
         mode: 'no-cors',
-        credentials: 'omit',
-        headers: headers,
+        credentials: 'omit'
        })
 .then(data=>  {
         console.log(data);
