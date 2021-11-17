@@ -28,7 +28,8 @@ try {
                 method : 'get',
                 headers:{
                         'Authorization': 'Basic ' + btoa(username + ":" + password),
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
                 },
                 mode : 'no-cors', 
                 cache: 'default'     
