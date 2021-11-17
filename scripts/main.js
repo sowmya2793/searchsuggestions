@@ -13,7 +13,7 @@ fetch(url, {
                 'Authorization' :  'Basic ' + btoa('username: password'),
                 'Content-Type' : 'application/json'
         },
-        //credentials: 'omit'
+        credentials: 'omit'
        })
 .then(data=>  {
         console.log(data);
