@@ -9,6 +9,7 @@ headers.append('Accept', 'application/json');
 fetch(url, {
         method:'GET',
         mode: 'cors',
+        headers: headers,
         credentials: 'omit'
        })
 .then(data=>  {
