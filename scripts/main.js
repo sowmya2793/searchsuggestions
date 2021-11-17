@@ -8,7 +8,7 @@ headers.append('Content-Type', 'application/json');
 headers.append('Accept', 'application/json');*/
 fetch(url, {
         method:'GET',
-        mode: 'cors',
+        mode: 'no-cors',
         headers: {
                 'Authorization' :  'Basic ' + btoa('username: password'),
                 'Content-Type' : 'application/json'
