@@ -1,52 +1,17 @@
-//init TBD instead of code below
-let url = 'https://spark.innosabi.com/api/v4/suggestion';
-const username = 'api@innosabi.com';
-        const password = '0thRuch0';
-//let headers = new Headers();
-//headers.set('Authorization', 'Basic ' + btoa(username + ":" + password));
-//headers.append('Content-Type', 'application/json');
-//headers.append('Accept', 'application/json');
-fetch(url, {
-        method:'GET',
-        mode: 'no-cors',
-        headers: {
-                'Authorization' :  'Basic ' + btoa('username: password'),
-                'Content-Type' : 'application/json'
-        },
-        credentials: 'omit'
-       })
-.then(data=>  {
-        console.log(data);
-    })
-.catch(error => {
-  console.log('Error:', error);
-});
-//Test code start
-/*async function APIcallfinal(){
-try {
-        let response= await fetch(url,{
-                method : 'get',
-                headers:{
-                        'Authorization': 'Basic ' + btoa(username + ":" + password),
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                },
-                mode : 'no-cors', 
-                cache: 'default'     
-        }
-        );
-        let data = await response.json();
-        return data;
-}
-catch(err){
-        return err;
-}
-}
-async function main(){
-        console.log('first');
-        let result= await APIcallfinal();
-        console.log(result);
-        console.log('second')
-}
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "Basic YXBpQGlubm9zYWJpLmNvbTowdGhSdWNoMA==");
+myHeaders.append("Cookie", "ignite=164447b26cbeb68c505df29ec4b6a4ce");
 
-main(); */
+var formdata = new FormData();
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  body: formdata,
+  redirect: 'follow'
+};
+
+fetch("https://spark.innosabi.com/api/v4/suggestion\n?=innovation\n", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
