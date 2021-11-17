@@ -7,7 +7,8 @@ var formdata = new FormData();
 var requestOptions = {
   method: 'GET',
   headers: myHeaders,
-  redirect: 'follow'
+  redirect: 'follow',
+  mode: 'no-cors'
 };
 
 fetch("https://spark.innosabi.com/api/v4/suggestion\n?=innovation\n", requestOptions)
