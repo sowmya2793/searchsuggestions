@@ -40,7 +40,7 @@ let url = 'https://spark.innosabi.com/api/v4/suggestion';
 
 fetch(url, {
         method:'GET',
-        mode: 'no-cors',
+        mode: 'cors',
         credentials: 'omit'
        })
 .then(data=>  {
