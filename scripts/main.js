@@ -7,7 +7,6 @@ var formdata = new FormData();
 var requestOptions = {
   method: 'GET',
   headers: myHeaders,
-  body: formdata,
   redirect: 'follow'
 };
 
