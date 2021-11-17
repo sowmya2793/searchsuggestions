@@ -1,5 +1,5 @@
 //work around for Cors- does not allow Localhost or local file to fetch from https
-var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
+/*var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
 function doCORSRequest(options, printResult) {
         var x = new XMLHttpRequest();
         x.open(options.method, cors_api_url + options.url);
@@ -34,9 +34,9 @@ function doCORSRequest(options, printResult) {
                 outputresult.value = result;
         });
 })();
-
+*/
 //init TBD instead of code above
-/*let url = 'https://spark.innosabi.com/api/v4/suggestion';
+let url = 'https://spark.innosabi.com/api/v4/suggestion';
 headers.set('Authorization', 'Basic ' + btoa(username + ":" + password));
 headers.append('Content-Type', 'application/json');
 headers.append('Accept', 'application/json');
@@ -51,7 +51,4 @@ fetch(url, {
     })
 .catch(error => {
   console.log('Error:', error);
-}); */
-/* let params = { "params": "innovation" };
-        let queryterm = Object.keys(params).map(k => encodeURIComponent(k) + '=' + encodeURIComponent(params[k])).join('&');
-        */
+}); 
