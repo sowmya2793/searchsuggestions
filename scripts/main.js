@@ -1,5 +1,4 @@
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "Basic YXBpQGlubm9zYWJpLmNvbTowdGhSdWNoMA==");
 myHeaders.append("Cookie", "ignite=164447b26cbeb68c505df29ec4b6a4ce");
 
 var formdata = new FormData();
